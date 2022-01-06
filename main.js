@@ -7,6 +7,8 @@ function setup(){
     video=createCapture(VIDEO);
     video.size(480,300);
     video.hide();
+}
+function start(){
     objectDetector=ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML="Status :Detecting Objects";
     input_object=document.getElementById("object").value;
