@@ -40,9 +40,6 @@ function draw(){
 function modelLoaded(){
     console.log("Model Loaded");
     status_object=true;
-    video.loop();
-    video.speed(1);
-    video.volume(0);
 }
 function gotResult(error,results){
     if(error){
